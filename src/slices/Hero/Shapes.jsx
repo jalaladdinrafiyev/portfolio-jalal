@@ -62,15 +62,6 @@ function Geometries() {
 
 	const materials = [
 		new THREE.MeshNormalMaterial(),
-		new THREE.MeshStandardMaterial({ color: 0xff0000, roughness: 0.0001, metalness: 1 }), // Red
-		new THREE.MeshStandardMaterial({ color: 0x00ff00, roughness: 0.0001, metalness: 1 }), // Green
-		new THREE.MeshStandardMaterial({ color: 0x0000ff, roughness: 0.0001, metalness: 1 }), // Blue
-		new THREE.MeshStandardMaterial({ color: 0xffff00, roughness: 0.0001, metalness: 1 }), // Yellow
-		new THREE.MeshStandardMaterial({ color: 0xff00ff, roughness: 0.0001, metalness: 1 }), // Magenta
-		new THREE.MeshStandardMaterial({ color: 0x00ffff, roughness: 0.0001, metalness: 1 }), // Cyan
-		new THREE.MeshStandardMaterial({ color: 0xffa500, roughness: 0.0001, metalness: 1 }), // Orange
-		new THREE.MeshStandardMaterial({ color: 0x800080, roughness: 0.0001, metalness: 1 }), // Purple
-		new THREE.MeshStandardMaterial({ color: 0x008080, roughness: 0.0001, metalness: 1 }), // Teal
 		new THREE.MeshStandardMaterial({ color: 0xff1493, roughness: 0.0001, metalness: 1 }), // Deep Pink
 		new THREE.MeshStandardMaterial({ color: 0xff4500, roughness: 0.0001, metalness: 1 }), // Orange Red
 		new THREE.MeshStandardMaterial({ color: 0x32cd32, roughness: 0.0001, metalness: 1 }), // Lime Green
@@ -92,7 +83,7 @@ function Geometries() {
 	const soundEffects = [
 		new Audio('/sounds/knock1.ogg'),
 		new Audio('/sounds/knock2.ogg'),
-		new Audio('/sounds/knock3.ogg')['/']
+		new Audio('/sounds/knock3.ogg')
 	];
 
 	return geometries.map(({ position, r, geometry }) => (
