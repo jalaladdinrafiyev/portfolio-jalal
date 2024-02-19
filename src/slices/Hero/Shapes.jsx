@@ -24,7 +24,7 @@ const Shapes = () => {
 						blur={1}
 						far={9}
 					/>
-					<Environment preset='warehouse' />
+					<Environment preset='studio' />
 				</Suspense>
 			</Canvas>
 		</div>
@@ -61,30 +61,38 @@ function Geometries() {
 	];
 
 	const materials = [
-    new THREE.MeshNormalMaterial(),
-    new THREE.MeshStandardMaterial({ color: 0xff0000, roughness: 0.1, metalness: 0.5 }), // Red
-    new THREE.MeshStandardMaterial({ color: 0x00ff00, roughness: 0.1, metalness: 0.5 }), // Green
-    new THREE.MeshStandardMaterial({ color: 0x0000ff, roughness: 0.1, metalness: 0.5 }), // Blue
-    new THREE.MeshStandardMaterial({ color: 0xffff00, roughness: 0.1, metalness: 0.5 }), // Yellow
-    new THREE.MeshStandardMaterial({ color: 0xff00ff, roughness: 0.1, metalness: 0.5 }), // Magenta
-    new THREE.MeshStandardMaterial({ color: 0x00ffff, roughness: 0.1, metalness: 0.5 }), // Cyan
-    new THREE.MeshStandardMaterial({ color: 0xffa500, roughness: 0.1, metalness: 0.5 }), // Orange
-    new THREE.MeshStandardMaterial({ color: 0x800080, roughness: 0.1, metalness: 0.5 }), // Purple
-    new THREE.MeshStandardMaterial({ color: 0x008080, roughness: 0.1, metalness: 0.5 }), // Teal
-    new THREE.MeshStandardMaterial({ color: 0xff1493, roughness: 0.1, metalness: 0.5 }), // Deep Pink
-    new THREE.MeshStandardMaterial({ color: 0xff4500, roughness: 0.1, metalness: 0.5 }), // Orange Red
-    new THREE.MeshStandardMaterial({ color: 0x32cd32, roughness: 0.1, metalness: 0.5 }), // Lime Green
-    new THREE.MeshStandardMaterial({ color: 0x800000, roughness: 0.1, metalness: 0.5 }), // Maroon
-    new THREE.MeshStandardMaterial({ color: 0x9932cc, roughness: 0.1, metalness: 0.5 }), // Dark Orchid
-    new THREE.MeshStandardMaterial({ color: 0x4682b4, roughness: 0.1, metalness: 0.5 }), // Steel Blue
-    new THREE.MeshStandardMaterial({ color: 0x000000, roughness: 0.1, metalness: 0.5 }), // Black
-];
-
+		new THREE.MeshNormalMaterial(),
+		new THREE.MeshStandardMaterial({ color: 0xff0000, roughness: 0.0001, metalness: 1 }), // Red
+		new THREE.MeshStandardMaterial({ color: 0x00ff00, roughness: 0.0001, metalness: 1 }), // Green
+		new THREE.MeshStandardMaterial({ color: 0x0000ff, roughness: 0.0001, metalness: 1 }), // Blue
+		new THREE.MeshStandardMaterial({ color: 0xffff00, roughness: 0.0001, metalness: 1 }), // Yellow
+		new THREE.MeshStandardMaterial({ color: 0xff00ff, roughness: 0.0001, metalness: 1 }), // Magenta
+		new THREE.MeshStandardMaterial({ color: 0x00ffff, roughness: 0.0001, metalness: 1 }), // Cyan
+		new THREE.MeshStandardMaterial({ color: 0xffa500, roughness: 0.0001, metalness: 1 }), // Orange
+		new THREE.MeshStandardMaterial({ color: 0x800080, roughness: 0.0001, metalness: 1 }), // Purple
+		new THREE.MeshStandardMaterial({ color: 0x008080, roughness: 0.0001, metalness: 1 }), // Teal
+		new THREE.MeshStandardMaterial({ color: 0xff1493, roughness: 0.0001, metalness: 1 }), // Deep Pink
+		new THREE.MeshStandardMaterial({ color: 0xff4500, roughness: 0.0001, metalness: 1 }), // Orange Red
+		new THREE.MeshStandardMaterial({ color: 0x32cd32, roughness: 0.0001, metalness: 1 }), // Lime Green
+		new THREE.MeshStandardMaterial({ color: 0x800000, roughness: 0.0001, metalness: 1 }), // Maroon
+		new THREE.MeshStandardMaterial({ color: 0x9932cc, roughness: 0.0001, metalness: 1 }), // Dark Orchid
+		new THREE.MeshStandardMaterial({ color: 0x4682b4, roughness: 0.0001, metalness: 1 }), // Steel Blue
+		new THREE.MeshStandardMaterial({ color: 0x000000, roughness: 0.0001, metalness: 1 }), // Black
+		new THREE.MeshStandardMaterial({ color: 0xffffff, roughness: 0.0001, metalness: 1 }),
+		new THREE.MeshStandardMaterial({ color: 0x8b4513, roughness: 0.0001, metalness: 1 }), // SaddleBrown
+		new THREE.MeshStandardMaterial({ color: 0xd2691e, roughness: 0.0001, metalness: 1 }), // Chocolate
+		new THREE.MeshStandardMaterial({ color: 0x2e8b57, roughness: 0.0001, metalness: 1 }), // SeaGreen
+		new THREE.MeshStandardMaterial({ color: 0x708090, roughness: 0.0001, metalness: 1 }), // SlateGray
+		new THREE.MeshStandardMaterial({ color: 0x6a5acd, roughness: 0.0001, metalness: 1 }), // SlateBlue
+		new THREE.MeshStandardMaterial({ color: 0x87cefa, roughness: 0.0001, metalness: 1 }), // LightSkyBlue
+		new THREE.MeshStandardMaterial({ color: 0xff69b4, roughness: 0.0001, metalness: 1 }), // HotPink
+		new THREE.MeshStandardMaterial({ color: 0xf0e68c, roughness: 0.0001, metalness: 1 }) // Khaki // White
+	];
 
 	const soundEffects = [
 		new Audio('/sounds/knock1.ogg'),
 		new Audio('/sounds/knock2.ogg'),
-		new Audio('/sounds/knock3.ogg')
+		new Audio('/sounds/knock3.ogg')['/']
 	];
 
 	return geometries.map(({ position, r, geometry }) => (
