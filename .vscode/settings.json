@@ -4,5 +4,6 @@
     "gsap",
     "prismicio",
     "yoyo"
-  ]
+  ],
+  "CodeGPT.apiKey": "CodeGPT Plus Beta"
 }

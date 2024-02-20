@@ -2,7 +2,19 @@
 	{
 		"__TYPE__": "SharedSliceContent",
 		"variation": "default",
-		"primary": {},
+		"primary": {
+			"text": {
+				"__TYPE__": "StructuredTextContent",
+				"value": [
+					{
+						"type": "paragraph",
+						"content": {
+							"text": "Do laborum ad aute nisi sint nulla sit tempor tempor deserunt. Proident non nulla qui commodo velit incididunt magna cupidatat reprehenderit pariatur laborum in."
+						}
+					}
+				]
+			}
+		},
 		"items": []
 	}
 ]
